@@ -1,9 +1,9 @@
 <template>
-  <div class="expenses-chart">
+  <div class="chart">
     <ExpensesChartHeader />
 
-    <div class="expenses-chart__body">
-      <!-- <ExpensesChartMainContent :chart-data="chartData" /> -->
+    <div class="chart__body">
+      <ChartContent />
       <ExpensesChartSummary />
     </div>
   </div>
@@ -11,7 +11,7 @@
 
 <script setup>
 import ChartHeader from "./components/ChartHeader.vue";
-// import ExpensesChartMainContent from "@/components/ExpensesChartMainContent.vue";
+import ChartContent from "./components/ChartContent.vue";
 import ChartSummary from "./components/ChartSummary.vue";
 
 defineProps({
@@ -24,7 +24,7 @@ defineProps({
 
 <style lang="scss" scoped>
 @import './style.scss';
-.expenses-chart {
+.chart {
   margin: 67px auto 0 auto;
 
   width: 92%;
