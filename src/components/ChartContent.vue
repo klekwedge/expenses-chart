@@ -1,15 +1,11 @@
 <template>
-  <div class="chart--content">
-    <h2
-      class="chart--content__time-range-info"
-      data-test="range-time-title"
-    >
+  <div class="chart-content">
+    <h2 class="chart-content__time-range-info" data-test="range-time-title">
       Spending - Last 7 days
     </h2>
-
-    <div class="chart--content__chart">
+    <div class="chart-content__chart">
       <div
-        class="chart--content__single-day"
+        class="chart-content__single-day"
         v-for="dayData in chartData"
         :key="dayData.day"
       >
@@ -19,7 +15,7 @@
           :value="dayData.amount"
         />
 
-        <div class="chart--content__day-name" data-test="day-name">
+        <div class="chart-content__day-name" data-test="day-name">
           {{ dayData.day }}
         </div>
       </div>
@@ -46,7 +42,7 @@ const isMaximumValue = (value) =>
   
 <style lang="scss" scoped>
 @import "../style.scss";
-.chart--content {
+.chart-content {
   padding-bottom: 24px;
   margin-bottom: 24px;
 

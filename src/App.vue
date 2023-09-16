@@ -1,10 +1,9 @@
 <template>
   <div class="chart">
-    <ExpensesChartHeader />
-
+    <ChartHeader />
     <div class="chart__body">
       <ChartContent />
-      <ExpensesChartSummary />
+      <ChartSummary />
     </div>
   </div>
 </template>
