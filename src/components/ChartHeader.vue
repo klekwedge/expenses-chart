@@ -1,16 +1,12 @@
 <template>
   <div class="chart-header">
     <div class="chart-header__wrapper">
-      <h1 class="chart-header__balance-title">
-        My balance
-      </h1>
-      <h2 class="chart-header__balance">
-        ${{ balance }}
-      </h2>
+      <h1 class="chart-header__balance-title">My balance</h1>
+      <h2 class="chart-header__balance">${{ balance }}</h2>
     </div>
     <img
       class="logo-icon"
-      src="@/assets/svg/logo.svg"
+      src="../assets/svg/logo.svg"
       alt="Two circles logo image"
       title="Logo"
     />
@@ -24,6 +20,7 @@ const balance = ref(921.48);
 </script>
   
   <style lang="scss" scoped>
+@import "../style.scss";
 .chart-header {
   display: flex;
   justify-content: space-between;

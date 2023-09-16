@@ -19,6 +19,7 @@ const lastMonthPrice = ref(2.4); // In %
 </script>
   
   <style lang="scss" scoped>
+@import '../style.scss';
 .chart-summary {
   display: flex;
   justify-content: space-between;
