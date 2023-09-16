@@ -12,13 +12,6 @@
 import ChartHeader from "./components/ChartHeader.vue";
 import ChartContent from "./components/ChartContent.vue";
 import ChartSummary from "./components/ChartSummary.vue";
-
-defineProps({
-  chartData: {
-    required: true,
-    type: Array,
-  },
-});
 </script>
 
 <style lang="scss" scoped>
