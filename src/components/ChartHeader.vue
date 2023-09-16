@@ -1,10 +1,10 @@
 <template>
   <div class="chart-header">
     <div class="chart-header__wrapper">
-      <h1 class="chart-header__balance-title" data-test="balance-text">
+      <h1 class="chart-header__balance-title">
         My balance
       </h1>
-      <h2 class="chart-header__balance" data-test="balance-value">
+      <h2 class="chart-header__balance">
         ${{ balance }}
       </h2>
     </div>
